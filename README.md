@@ -42,15 +42,26 @@ Een mogelijke oplossing zou zijn dat ik alles in HTML en CSS moet gaan coderen. 
 ### 3. iPod touch
 Gebruikte browser: Safari / 8536.25
 <br>
-Er wordt niks geladen als ik de applicatie open. Je komt direct op een wit scherm waarbij CSS deels is weggevallen. JavaScript doet het daarnaast ook niet.
+Er wordt niks geladen als ik de applicatie open. Je komt direct op een wit scherm waarbij CSS deels is weggevallen. JavaScript doet het daarnaast ook niet. Er is geen interactie mogelijk.
 
 De home page: <br>
 ![Schermafbeelding 2020-03-12 om 14 59 39](https://user-images.githubusercontent.com/45489420/76529149-2b13f900-6472-11ea-9281-58445b20357a.png)
 
 Mogelijke oplossing:
-Een mogelijke oplossing is om de applicatie grotendeels te maken in semantische HTML. 
+Een mogelijke oplossing is om de applicatie grotendeels te maken in semantische HTML. Echter wordt de website dan wel heel saai.
 
 ## Testen op 3 verschillende browsers
+Ik heb mijn applicatie getest op drie verschillende browsers:
+1. Google Chrome
+2. Firefox
+3. Opera
+
+In principe werkt de app op alle browsers. Echter zie ik wel een klein verschil bij Firefox, vergeleken met de anderen.
+Aan de linkerkant zie je Google Chrome, daarna Firefox en tenslotte Opera:
+
+Zoals je ziet, ziet de button met de pijl en het knopje aan de bovenkant er anders uit. Ik weet niet exact hoe dit komt.
+
+Mogelijke oplossing:
 
 
 ## Testen op de screenreader
