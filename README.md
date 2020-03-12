@@ -22,8 +22,8 @@ Mobile Internet Explorer 11.0
 <br>
 
 JavaScript wordt bij deze Nokia niet ingeladen. Dit heeft veel gevolgen voor mijn OBA app:
-*
-*
+* 
+* 
 
 
 ### 3. iPod touch
