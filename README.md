@@ -33,18 +33,18 @@ JavaScript wordt bij deze Nokia niet ingeladen. Dit heeft veel gevolgen voor mij
 Daarnaast werkt de loading state ook niet helemaal optimaal. De kaarten worden niet op de goede plek weergegeven.
 
 De loading state en de resultaten pagina:
-
+![Schermafbeelding 2020-03-12 om 14 59 32](https://user-images.githubusercontent.com/45489420/76529141-28b19f00-6472-11ea-9e02-af33ffa53921.png)
 
 Mogelijke oplossing: 
 Een mogelijke oplossing zou zijn dat ik alles in HTML en CSS moet gaan coderen. Interactie kan je namelijk ook toevoegen met CSS. Het is echter niet mogelijk om data via de API op te halen zonder JavaScript.
-
-
 
 
 ### 3. iPod touch
 Gebruikte browser: Safari / 8536.25
 <br>
 
+De home page:
+![Schermafbeelding 2020-03-12 om 14 59 39](https://user-images.githubusercontent.com/45489420/76529149-2b13f900-6472-11ea-9281-58445b20357a.png)
 
 
 ## Testen op 3 verschillende browsers
