@@ -11,6 +11,7 @@ https://jenniferslagt.github.io/project-1-1920/index.html
 ### 1. iPad 
 Gebruikte browser: Chrome 80 (on a HTC Nexus 0 running Android)
 <br>
+
 Het viel me op dat mijn app niet helemaal responsive is op deze tablet. Op de eerste pagina (na de loading state) wordt mijn achtergrond niet geschaald aan de schermgrootte. Dit komt omdat ik mijn background-image niet responsive heb gemaakt. 
 Als oplossing zou ik eventueel de guide op de website "say no to image flow" kunnen gebruiken. Ook kan ik de width en de height beter aanpassen.
 Voorderest werkte mijn app optimaal! De pagina's waren allemaal responsive.
@@ -19,6 +20,7 @@ Voorderest werkte mijn app optimaal! De pagina's waren allemaal responsive.
 Gebruiker browser:
 Mobile Internet Explorer 11.0 
 <br>
+
 JavaScript wordt bij deze Nokia niet ingeladen. Dit heeft veel gevolgen voor mijn OBA app:
 *
 *
