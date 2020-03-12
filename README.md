@@ -120,19 +120,19 @@ Mogelijke oplossing: een mogelijke oplossing is om meer gebruik te maken van con
 Tenslotte zijn er ook tools of extensies die de gebruiker kan toepassen. Zo heeft Google Chrome een extensie die de kleuren van het gehele scherm aanpast op basis van je type kleurenblindheid!
 <hr>
 
-<b>4. Muis / Trackpad uitschakelen </b>
+<b>4. Muis / Trackpad uitschakelen </b><br>
 Als ik door mijn OBA app navigeer zonder gebruik te maken van mijn trackpad, kom ik de volgende bevindingen tegen: 
 * Waar ben ik? Waar ligt mijn "focus" met navigeren? Het duurde even voordat ik doorhad op welke plek ik was.
 * Sommige elementen hebben wel een focus door een lichtblauwe border toe te voegen. Sommige elementen hebben dit niet waardoor je niet zo goed kan zien waar je je bevindt. 
 * Je kan in principe navigeren door de resultaten die bestaan uit afbeeldingen. Er wordt geen focus weergegeven, maar een update van je URL. 
-
+<br>
 Mogelijke oplossing: een mogelijke oplossing begint bij een semantische HTML. De focus van het navigeren is namelijk hierop gebaseerd. Daarnaast kan je ook nog een extra menu toevoegen die aleen verschijnt bij het focussen op een bepaalde element. Bij google verschijnt er bijvoorbeeld een extra menu als je focust op het logo. Tenslotte, maak gebruik van `:focus` in je CSS! Hierdoor kan je de stijling van een element aanpassen als de focus erop ligt. Tenslotte kan je ook nog de volgorde van de focus aanpassen in CSS. Dit wordt echter niet aangeraden. Mocht het belangrijk zijn, dan kan je ook nog handmatige shortcuts toevoegen, maar verander hierbij vooral niet de 'basis' shortcuts.
 <hr>
 
 <b>5. Breedband internet </b>
 
 <hr>
-<b>6. JavaScript volledig uitzetten </b>
+<b>6. JavaScript volledig uitzetten </b><br>
 Ik heb de JavaScript uitgezet met behulp van de developer tool. Eigenlijk gebeurt er hier hetzelfde als bij het testen van mijn app op de Nokia.
 <br>
 Mijn app is een single page die bestaat uit sections. Welke section er wordt weergegeven, is afhankelijk van de route. De route heb ik geschreven in JavaScript, waardoor er niet van sections geswitched kan worden.
