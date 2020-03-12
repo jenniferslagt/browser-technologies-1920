@@ -129,7 +129,11 @@ Als ik door mijn OBA app navigeer zonder gebruik te maken van mijn trackpad, kom
 Mogelijke oplossing: een mogelijke oplossing begint bij een semantische HTML. De focus van het navigeren is namelijk hierop gebaseerd. Daarnaast kan je ook nog een extra menu toevoegen die aleen verschijnt bij het focussen op een bepaalde element. Bij google verschijnt er bijvoorbeeld een extra menu als je focust op het logo. Tenslotte, maak gebruik van `:focus` in je CSS! Hierdoor kan je de stijling van een element aanpassen als de focus erop ligt. Tenslotte kan je ook nog de volgorde van de focus aanpassen in CSS. Dit wordt echter niet aangeraden. Mocht het belangrijk zijn, dan kan je ook nog handmatige shortcuts toevoegen, maar verander hierbij vooral niet de 'basis' shortcuts.
 <hr>
 
-<b>5. Breedband internet </b>
+<b>5. Breedband internet </b><br>
+Via inspecteren > network > online kan je je internetsnelheid aanpassen. Ik heb deze op "slow 3g" gezet om te testen of dit invloed heeft op mijn OBA app. Het blijkt dat dit niet veel invloed heeft op mijn app. Dingen worden niet slower geladen. Ik denk dat dit komt doordat ik een externe file heb aangemaakt (data.js) waarin ik een array van data inlaadt en een deel ervan render op de pagina. Kortom: ik maak niet daadwerkelijk gebruik van mijn OBA API. Ik denk dat dit dan ook de reden is dat het niet veel invloed heeft op mijn app.
+<br>
+Mogelijke oplossing: JavaScript wordt altijd als laatst geladen en kost meer tijd. Een mogelijke oplossing kan zijn om zoveel mogelijk sematische HTML en CSS code te schrijven. Dit kost namelijk minder internet en dus ook minder tijd.
+Daarnaast is het ook handig om altijd feedback te geven wanneer het internet traag is. Denk aan een loading state (bijvoorbeeld een skeleton UI van alle resultaten). Hier is het belangrijk om aan Progressive Enhancement te denken.
 
 <hr>
 <b>6. JavaScript volledig uitzetten </b><br>
@@ -139,11 +143,15 @@ Mijn app is een single page die bestaat uit sections. Welke section er wordt wee
 Daarnaast kan ik data ophalen met behulp van de OBA API. Dit zal niet werken omdat het in JavaScript geschreven is.
 Ook heb ik een bij een paar elementen interactie toegevoegd met behulp van JavaScript. Deze doen het ook niet meer.
 <br>
+
 Ook is het hierbij de oplossing om zoveel mogelijk code te schrijven in semantische HTML en CSS. Daarnaast is het ook handig om feedback te geven, mocht JavaScript niet worden ingeladen.
 
 <hr>
-<b>7. Cookies niet accepteren / uitzetten </b>
+<b>7. Cookies niet accepteren / uitzetten </b><br>
+Via de webdeveloper tool is het mogelijk om de cookies uit te zetten. Als ik de cookies uitzet, heeft dit geen invloed op mijn OBA app. Alles blijft hetzelfde.
+
+Mogelijke oplossing: als een applicatie afhankelijk is van cookies, is het altijd handig om een fallback site te hebben die wel werkt zonder cookies.
 
 <hr>
-<b>8. localStorage uitzetten </b>
-
+<b>8. localStorage uitzetten </b><br>
+In mijn OBA app maak ik geen gebruik van localStorage.  
