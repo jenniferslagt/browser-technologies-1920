@@ -14,7 +14,13 @@ Gebruikte browser: Chrome 80 (on a HTC Nexus 0 running Android)
 
 Het viel me op dat mijn app niet helemaal responsive is op deze tablet. Op de eerste pagina (na de loading state) wordt mijn achtergrond niet geschaald aan de schermgrootte. Dit komt omdat ik mijn background-image niet responsive heb gemaakt. 
 Als oplossing zou ik eventueel de guide op de website "say no to image flow" kunnen gebruiken. Ook kan ik de width en de height beter aanpassen.
+De home page:
+![IMG_20200312_125847_resized_20200312_013518498](https://user-images.githubusercontent.com/45489420/76525713-a4105200-646c-11ea-9045-a844d31456ca.jpg)
+
 Voorderest werkte mijn app optimaal! De pagina's waren allemaal responsive.
+De resultaten pagina:
+![IMG_20200312_125923_resized_20200312_013516111](https://user-images.githubusercontent.com/45489420/76525698-9d81da80-646c-11ea-8313-3211e7eb1ad8.jpg)
+
 
 
 ### 2. Nokia Lumia 620
