@@ -94,8 +94,9 @@ Kortom: Niet alleen het karakter van de app verdwijnt, maar ook het kan ook invl
 
 Mogelijke oplossing: 
 Een mogelijke oplossing is om niet een afbeelding te gebruiken, maar om een svg bestand in te laden (bijvoorbeeld de code hiervan). Daarnaast kan je natuurlijk ook gebruik maken van het `alt` attribute in het `<img>` element. Hierin komt dan de beschrijving over de afbeelding. Titels toevoegen kan ook een optie zijn. 
+<hr>
 
-<b>2. Custom fonts </b>
+<b>2. Custom fonts </b><br>
 Ik heb het type lettertype van mijn app uitgezet via inspecteren > styles. 
 <br>
 Het valt me op dat ik maar een enkele waarde achter de `font-family` heb neergezet, namelijk "Sans Serif". Als ik dit uitschakel, verandert het lettertype naar New Times Roman. Misschien niet mijn nummer 2 lettertype waar ik voor zou kiezen, maar alles blijft wel voorderest leesbaar.
@@ -105,9 +106,9 @@ Wat me opvalt, is dat het pijltje van de button wel van vorm verandert:
 Het ziet er minder mooi uit en het lijkt een beetje horizontaal uitgerekt.
 <br>
 Mogelijke oplossing: achter de eigenschap `font-family` zou je meerdere lettertypes kunnen neerzetten. Denk bijvoorbeeld aan een fallback lettertype. Misschien voorkomt dit ook dat het pijltje niet helemaal verandert, maar dit zou je kunnen testen.
+<hr>
 
-
-<b>3. Kleur uitzetten / kleurenblindheid</b>
+<b>3. Kleur uitzetten / kleurenblindheid</b><br>
 Via de inspecteren > styles is het mogelijk om alle kleuren op je website uit te zetten. Als ik dit doe, worden alle letters zwart, worden de overige kleuren wit. Mijn pagina verliest echter zijn speelse "game" karakter. Het ziet er erg saai uit. 
 <br>
 
@@ -116,18 +117,20 @@ Ik heb als developer op dat moment geen rekening gehouden met kleurenblindheid, 
 <br>
 Mogelijke oplossing: een mogelijke oplossing is om meer gebruik te maken van contrast in mijn app. Daarnaast moet je altijd opletten welke kleuren je kiest en combineert. Het is handig om onderzoek te doen naar welke type kleurenblindheid er zijn (zoals de rood-groene combinatie). Daarnaast kan je ook natuurlijk gebruik maken van patronen (oftwel vormen). Dat betekent niet meteen dat je die kleuren moet weghalen, maar je kan bijvoorbeeld ook die patronen toevoegen binnen de kleuren. Ook kan je ervoor kiezen om betekenisvolle symbolen toe te voegen. 
 Tenslotte zijn er ook tools of extensies die de gebruiker kan toepassen. Zo heeft Google Chrome een extensie die de kleuren van het gehele scherm aanpast op basis van je type kleurenblindheid!
+<hr>
 
 <b>4. Muis / Trackpad uitschakelen </b>
 
+<hr>
 
 <b>5. Breedband internet </b>
 
-
+<hr>
 <b>6. JavaScript volledig uitzetten </b>
 
-
+<hr>
 <b>7. Cookies niet accepteren / uitzetten </b>
 
-
+<hr>
 <b>8. localStorage uitzetten </b>
 
