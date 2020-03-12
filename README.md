@@ -62,7 +62,7 @@ Aan de linkerkant zie je Google Chrome, daarna Firefox en tenslotte Opera:
 Zoals je ziet, ziet de button met de pijl en het knopje aan de bovenkant er anders uit. Ik denk dat dit komt doordat het symbool (of het font ervan) niet wordt ondersteund door FireFox. <br>
 ![Schermafbeelding 2020-03-12 om 22 42 36](https://user-images.githubusercontent.com/45489420/76569216-db095680-64b2-11ea-868e-32bbf1d9dd72.png)<br>
 Mogelijke oplossing:
-Ik denk dat de oplossing bij Firefox in een klein detail ligt.
+Ik denk dat de oplossing bij Firefox in een klein detail ligt. Zo zou ik voor dit symbool een png- of svg (met of zonder code) bestand kunnen inladen. Daarnaast bestaan er ook HTML entities, dit zijn bepaalde codes die een symbool vormen. Kortom: het is altijd handig om te checken of iets wel of niet wordt ondersteund door een browser. Zo zou ik bijvoorbeeld https://caniuse.com/ kunnen gebruiken.
 
 ## Testen op de screenreader
 Om de "screenreader" te activeren op mijn Macbook, ben ik erachter gekomen dat er een VoiceOver is. Deze is de vinden via het apple panel op systeemvoorkeuren > toegangelijkheid > VoiceOver. Vervolgens kan je het activeren. (Daarnaast is er ook een shortcut voor). Daarnaast biedt Apple ook een training aan over hoe je met de VoiceOver te werk kan gaan.
