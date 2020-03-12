@@ -42,10 +42,13 @@ Een mogelijke oplossing zou zijn dat ik alles in HTML en CSS moet gaan coderen. 
 ### 3. iPod touch
 Gebruikte browser: Safari / 8536.25
 <br>
+Er wordt niks geladen als ik de applicatie open. Je komt direct op een wit scherm waarbij CSS deels is weggevallen. JavaScript doet het daarnaast ook niet.
 
-De home page:
+De home page: <br>
 ![Schermafbeelding 2020-03-12 om 14 59 39](https://user-images.githubusercontent.com/45489420/76529149-2b13f900-6472-11ea-9281-58445b20357a.png)
 
+Mogelijke oplossing:
+Een mogelijke oplossing is om de applicatie grotendeels te maken in semantische HTML. 
 
 ## Testen op 3 verschillende browsers
 
