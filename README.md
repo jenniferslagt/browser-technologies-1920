@@ -58,13 +58,22 @@ Ik heb mijn applicatie getest op drie verschillende browsers:
 
 In principe werkt de app op alle browsers. Echter zie ik wel een klein verschil bij Firefox, vergeleken met de anderen.
 Aan de linkerkant zie je Google Chrome, daarna Firefox en tenslotte Opera:
-
+![Schermafbeelding 2020-03-12 om 17 42 20](https://user-images.githubusercontent.com/45489420/76544807-ee9fc780-6488-11ea-9a24-edef15268f7d.png)
 Zoals je ziet, ziet de button met de pijl en het knopje aan de bovenkant er anders uit. Ik weet niet exact hoe dit komt.
+
+Mogelijke oplossing:
+Ik denk dat de oplossing bij Firefox in een klein detail ligt.
+
+## Testen op de screenreader
+Om de "screenreader" te activeren op mijn Macbook, ben ik erachter gekomen dat er een VoiceOver is. Deze is de vinden via het apple panel op systeemvoorkeuren > toegangelijkheid > VoiceOver. Vervolgens kan je het activeren. (Daarnaast is er ook een shortcut voor). Daarnaast biedt Apple ook een training aan over hoe je met de VoiceOver te werk kan gaan.
+
+Ik heb de VoiceOver gebruikt om mijn OBA APP.
+
+
 
 Mogelijke oplossing:
 
 
-## Testen op de screenreader
 
 
 ## De 8 features
