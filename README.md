@@ -115,18 +115,31 @@ Via de inspecteren > styles is het mogelijk om alle kleuren op je website uit te
 Maar wat als een gebruiker kleurenblind is? 
 Ik heb als developer op dat moment geen rekening gehouden met kleurenblindheid, maar als ik naar mijn app kijk, is er zeker een contrast tussen bepaalde kleuren. Helaas heb ik wel gebruikt gemaakt van de kleurencombinatie rood en groen: namelijk de rode OBA letters op de groene achtergrond. Deze combinatie van kleuren is de meeste voorkomende vorm van kleurenblindheid. Sommige vinden het lastig om deze te onderscheiden.
 <br>
+
 Mogelijke oplossing: een mogelijke oplossing is om meer gebruik te maken van contrast in mijn app. Daarnaast moet je altijd opletten welke kleuren je kiest en combineert. Het is handig om onderzoek te doen naar welke type kleurenblindheid er zijn (zoals de rood-groene combinatie). Daarnaast kan je ook natuurlijk gebruik maken van patronen (oftwel vormen). Dat betekent niet meteen dat je die kleuren moet weghalen, maar je kan bijvoorbeeld ook die patronen toevoegen binnen de kleuren. Ook kan je ervoor kiezen om betekenisvolle symbolen toe te voegen. 
 Tenslotte zijn er ook tools of extensies die de gebruiker kan toepassen. Zo heeft Google Chrome een extensie die de kleuren van het gehele scherm aanpast op basis van je type kleurenblindheid!
 <hr>
 
 <b>4. Muis / Trackpad uitschakelen </b>
+Als ik door mijn OBA app navigeer zonder gebruik te maken van mijn trackpad, kom ik de volgende bevindingen tegen: 
+* Waar ben ik? Waar ligt mijn "focus" met navigeren? Het duurde even voordat ik doorhad op welke plek ik was.
+* Sommige elementen hebben wel een focus door een lichtblauwe border toe te voegen. Sommige elementen hebben dit niet waardoor je niet zo goed kan zien waar je je bevindt. 
+* Je kan in principe navigeren door de resultaten die bestaan uit afbeeldingen. Er wordt geen focus weergegeven, maar een update van je URL. 
 
+Mogelijke oplossing: een mogelijke oplossing begint bij een semantische HTML. De focus van het navigeren is namelijk hierop gebaseerd. Daarnaast kan je ook nog een extra menu toevoegen die aleen verschijnt bij het focussen op een bepaalde element. Bij google verschijnt er bijvoorbeeld een extra menu als je focust op het logo. Tenslotte, maak gebruik van `:focus` in je CSS! Hierdoor kan je de stijling van een element aanpassen als de focus erop ligt. Tenslotte kan je ook nog de volgorde van de focus aanpassen in CSS. Dit wordt echter niet aangeraden. Mocht het belangrijk zijn, dan kan je ook nog handmatige shortcuts toevoegen, maar verander hierbij vooral niet de 'basis' shortcuts.
 <hr>
 
 <b>5. Breedband internet </b>
 
 <hr>
 <b>6. JavaScript volledig uitzetten </b>
+Ik heb de JavaScript uitgezet met behulp van de developer tool. Eigenlijk gebeurt er hier hetzelfde als bij het testen van mijn app op de Nokia.
+<br>
+Mijn app is een single page die bestaat uit sections. Welke section er wordt weergegeven, is afhankelijk van de route. De route heb ik geschreven in JavaScript, waardoor er niet van sections geswitched kan worden.
+Daarnaast kan ik data ophalen met behulp van de OBA API. Dit zal niet werken omdat het in JavaScript geschreven is.
+Ook heb ik een bij een paar elementen interactie toegevoegd met behulp van JavaScript. Deze doen het ook niet meer.
+<br>
+Ook is het hierbij de oplossing om zoveel mogelijk code te schrijven in semantische HTML en CSS. Daarnaast is het ook handig om feedback te geven, mocht JavaScript niet worden ingeladen.
 
 <hr>
 <b>7. Cookies niet accepteren / uitzetten </b>
