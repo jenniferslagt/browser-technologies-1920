@@ -60,7 +60,7 @@ In principe werkt de app op alle browsers. Echter zie ik wel een klein verschil 
 Aan de linkerkant zie je Google Chrome, daarna Firefox en tenslotte Opera:
 ![Schermafbeelding 2020-03-12 om 17 42 20](https://user-images.githubusercontent.com/45489420/76544807-ee9fc780-6488-11ea-9a24-edef15268f7d.png)
 Zoals je ziet, ziet de button met de pijl en het knopje aan de bovenkant er anders uit. Ik weet niet exact hoe dit komt.
-
+![Schermafbeelding 2020-03-12 om 22 42 36](https://user-images.githubusercontent.com/45489420/76569216-db095680-64b2-11ea-868e-32bbf1d9dd72.png)
 Mogelijke oplossing:
 Ik denk dat de oplossing bij Firefox in een klein detail ligt.
 
@@ -125,6 +125,7 @@ Als ik door mijn OBA app navigeer zonder gebruik te maken van mijn trackpad, kom
 * Waar ben ik? Waar ligt mijn "focus" met navigeren? Het duurde even voordat ik doorhad op welke plek ik was.
 * Sommige elementen hebben wel een focus door een lichtblauwe border toe te voegen. Sommige elementen hebben dit niet waardoor je niet zo goed kan zien waar je je bevindt. 
 * Je kan in principe navigeren door de resultaten die bestaan uit afbeeldingen. Er wordt geen focus weergegeven, maar een update van je URL. 
+![Schermafbeelding 2020-03-12 om 20 39 42](https://user-images.githubusercontent.com/45489420/76569218-dc3a8380-64b2-11ea-8d9e-8de91e76fbc1.png)
 <br>
 Mogelijke oplossing: een mogelijke oplossing begint bij een semantische HTML. De focus van het navigeren is namelijk hierop gebaseerd. Daarnaast kan je ook nog een extra menu toevoegen die aleen verschijnt bij het focussen op een bepaalde element. Bij google verschijnt er bijvoorbeeld een extra menu als je focust op het logo. Tenslotte, maak gebruik van `:focus` in je CSS! Hierdoor kan je de stijling van een element aanpassen als de focus erop ligt. Tenslotte kan je ook nog de volgorde van de focus aanpassen in CSS. Dit wordt echter niet aangeraden. Mocht het belangrijk zijn, dan kan je ook nog handmatige shortcuts toevoegen, maar verander hierbij vooral niet de 'basis' shortcuts.
 <hr>
