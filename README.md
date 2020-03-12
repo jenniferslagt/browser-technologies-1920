@@ -60,7 +60,7 @@ In principe werkt de app op alle browsers. Echter zie ik wel een klein verschil 
 Aan de linkerkant zie je Google Chrome, daarna Firefox en tenslotte Opera:
 ![Schermafbeelding 2020-03-12 om 17 42 20](https://user-images.githubusercontent.com/45489420/76544807-ee9fc780-6488-11ea-9a24-edef15268f7d.png)
 Zoals je ziet, ziet de button met de pijl en het knopje aan de bovenkant er anders uit. Ik denk dat dit komt doordat het symbool (of het font ervan) niet wordt ondersteund door FireFox. <br>
-![Schermafbeelding 2020-03-12 om 22 42 36](https://user-images.githubusercontent.com/45489420/76569216-db095680-64b2-11ea-868e-32bbf1d9dd72.png)
+![Schermafbeelding 2020-03-12 om 22 42 36](https://user-images.githubusercontent.com/45489420/76569216-db095680-64b2-11ea-868e-32bbf1d9dd72.png)<br>
 Mogelijke oplossing:
 Ik denk dat de oplossing bij Firefox in een klein detail ligt.
 
