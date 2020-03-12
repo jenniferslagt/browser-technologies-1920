@@ -77,3 +77,27 @@ Mogelijke oplossing:
 
 
 ## De 8 features
+
+<b>1. Afbeeldingen</b>
+
+
+<b>2. Custom fonts </b>
+
+
+<b>3. Kleur </b>
+
+
+<b>4. Muis / Trackpad uitschakelen </b>
+
+
+<b>5. Breedband internet </b>
+
+
+<b>6. JavaScript volledig uitzetten </b>
+
+
+<b>7. Cookies niet accepteren / uitzetten </b>
+
+
+<b>8. localStorage uitzetten </b>
+
