@@ -79,22 +79,43 @@ Mogelijke oplossing:
 ## De 8 features
 
 <b>1. Afbeeldingen uitzetten</b><br>
+
 Met behulp van de developer tool extensie van Google Chrome is het mogelijk om alle afbeeldingen van de website uit te zetten. Hierdoor is het direct duidelijk wat er precies met de website gebeurd. 
 <br>
+
 Aangezien mijn OBA app voor grotendeels uit afbeeldingen bestaat, zal dit een grote impact hebben op de UX. Op de hoofdpagina (die verschijnt na de loadingstate), zal bijvoorbeeld geen achtegrond zijn. De achtergrond bestaat namelijk uit een afbeelding. Het "vrolijke" karakter van deze pagina zal echter verdwijnen. 
 <br>
+
 Daarnaast bestaat de pagina met resultaten uit afbeeldingen van boeken. Hierdoor zal de gebruiker niet direct kunnen zien welke boeken er op de pagina staan. Er is namelijk geen tekst of verdere omschrijving weergegeven. Echter hebben de afbeeldingen wel een border gekregen, waardoor je dus wel ziet dat er afbeeldingen aanwezig waren.
 <br>
+
 Kortom: Niet alleen het karakter van de app verdwijnt, maar ook het kan ook invloed hebben op het doel van een pagina. Afbeeldingen zijn namelijk erg betekenisvol en vormen grotendeels de content op mijn applicatie.
 <br>
+
 Mogelijke oplossing: 
 Een mogelijke oplossing is om niet een afbeelding te gebruiken, maar om een svg bestand in te laden (bijvoorbeeld de code hiervan). Daarnaast kan je natuurlijk ook gebruik maken van het `alt` attribute in het `<img>` element. Hierin komt dan de beschrijving over de afbeelding. Titels toevoegen kan ook een optie zijn. 
 
 <b>2. Custom fonts </b>
+Ik heb het type lettertype van mijn app uitgezet via inspecteren > styles. 
+<br>
+Het valt me op dat ik maar een enkele waarde achter de `font-family` heb neergezet, namelijk "Sans Serif". Als ik dit uitschakel, verandert het lettertype naar New Times Roman. Misschien niet mijn nummer 2 lettertype waar ik voor zou kiezen, maar alles blijft wel voorderest leesbaar.
+Wat me opvalt, is dat het pijltje van de button wel van vorm verandert:
 
 
-<b>3. Kleur </b>
+Het ziet er minder mooi uit en het lijkt een beetje horizontaal uitgerekt.
+<br>
+Mogelijke oplossing: achter de eigenschap `font-family` zou je meerdere lettertypes kunnen neerzetten. Denk bijvoorbeeld aan een fallback lettertype. Misschien voorkomt dit ook dat het pijltje niet helemaal verandert, maar dit zou je kunnen testen.
 
+
+<b>3. Kleur uitzetten / kleurenblindheid</b>
+Via de inspecteren > styles is het mogelijk om alle kleuren op je website uit te zetten. Als ik dit doe, worden alle letters zwart, worden de overige kleuren wit. Mijn pagina verliest echter zijn speelse "game" karakter. Het ziet er erg saai uit. 
+<br>
+
+Maar wat als een gebruiker kleurenblind is? 
+Ik heb als developer op dat moment geen rekening gehouden met kleurenblindheid, maar als ik naar mijn app kijk, is er zeker een contrast tussen bepaalde kleuren. Helaas heb ik wel gebruikt gemaakt van de kleurencombinatie rood en groen: namelijk de rode OBA letters op de groene achtergrond. Deze combinatie van kleuren is de meeste voorkomende vorm van kleurenblindheid. Sommige vinden het lastig om deze te onderscheiden.
+<br>
+Mogelijke oplossing: een mogelijke oplossing is om meer gebruik te maken van contrast in mijn app. Daarnaast moet je altijd opletten welke kleuren je kiest en combineert. Het is handig om onderzoek te doen naar welke type kleurenblindheid er zijn (zoals de rood-groene combinatie). Daarnaast kan je ook natuurlijk gebruik maken van patronen (oftwel vormen). Dat betekent niet meteen dat je die kleuren moet weghalen, maar je kan bijvoorbeeld ook die patronen toevoegen binnen de kleuren. Ook kan je ervoor kiezen om betekenisvolle symbolen toe te voegen. 
+Tenslotte zijn er ook tools of extensies die de gebruiker kan toepassen. Zo heeft Google Chrome een extensie die de kleuren van het gehele scherm aanpast op basis van je type kleurenblindheid!
 
 <b>4. Muis / Trackpad uitschakelen </b>
 
