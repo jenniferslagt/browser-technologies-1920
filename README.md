@@ -16,6 +16,7 @@ Het viel me op dat mijn app niet helemaal responsive is op deze tablet. Op de ee
 Als oplossing zou ik eventueel de guide op de website "say no to image flow" kunnen gebruiken. Ook kan ik de width en de height beter aanpassen.
 Voorderest werkte mijn app optimaal! De pagina's waren allemaal responsive.
 
+
 ### 2. Nokia Lumia 620
 Gebruiker browser:
 Mobile Internet Explorer 11.0 
