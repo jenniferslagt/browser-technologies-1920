@@ -78,8 +78,17 @@ Mogelijke oplossing:
 
 ## De 8 features
 
-<b>1. Afbeeldingen</b>
+<b>1. Afbeeldingen uitzetten</b>
+Met behulp van de developer tool extensie van Google Chrome is het mogelijk om alle afbeeldingen van de website uit te zetten. Hierdoor is het direct duidelijk wat er precies met de website gebeurd. 
+<br>
+Aangezien mijn OBA app voor grotendeels uit afbeeldingen bestaat, zal dit een grote impact hebben op de UX. Op de hoofdpagina (die verschijnt na de loadingstate), zal bijvoorbeeld geen achtegrond zijn. De achtergrond bestaat namelijk uit een afbeelding. Het "vrolijke" karakter van deze pagina zal echter verdwijnen. 
+<br>
+Daarnaast bestaat de pagina met resultaten uit afbeeldingen van boeken. Hierdoor zal de gebruiker niet direct kunnen zien welke boeken er op de pagina staan. Er is namelijk geen tekst of verdere omschrijving weergegeven. Echter hebben de afbeeldingen wel een border gekregen, waardoor je dus wel ziet dat er afbeeldingen aanwezig waren.
+<br>
+Kortom: Niet alleen het karakter van de app verdwijnt, maar ook het kan ook invloed hebben op het doel van een pagina. Afbeeldingen zijn namelijk erg betekenisvol en vormen grotendeels de content op mijn applicatie.
 
+Mogelijke oplossing: 
+Een mogelijke oplossing is om niet een afbeelding te gebruiken, maar om een svg bestand in te laden (bijvoorbeeld de code hiervan). Daarnaast kan je natuurlijk ook gebruik maken van het `alt` attribute in het `<img>` element. Hierin komt dan de beschrijving over de afbeelding. Titels toevoegen kan ook een optie zijn. 
 
 <b>2. Custom fonts </b>
 
