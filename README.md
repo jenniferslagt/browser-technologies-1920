@@ -76,16 +76,9 @@ Daarnaast kwam ik terecht op `input` elementen. Als de foucs hierop ligt, wordt 
 Daarnaast kan je naar de detailpagina navigeren waarbij een artikel wordt weergegeven die uit tekst bestaat. Deze tekst kan geselecteerd worden, waardoor de screenreader dit gaat oplezen.
 <br>
 Een paar screenshots die weergeven wat er exact gebeurt:
-
-
+![Schermafbeelding 2020-03-13 om 11 31 38](https://user-images.githubusercontent.com/45489420/76613351-3e7c9e00-651e-11ea-8ea1-e9357384ef32.png)
 
 Kortom het is belangrijk om attributen te gebruiken bij je HTML elementen die niet direct voorzich kunnen spreken (bijvoorbeeld een afbeelding voor slechtziende mensen). Deze worden namelijk opgelezen door de screenreader en kan meer duidelijkheid bieden aan de gebruiker.
-
-
-
-Mogelijke oplossing:
-
-
 
 
 ## De 8 features
@@ -167,4 +160,6 @@ Mogelijke oplossing: als een applicatie afhankelijk is van cookies, is het altij
 
 <hr>
 <b>8. localStorage uitzetten </b><br>
-In mijn OBA app maak ik geen gebruik van localStorage.  
+Ik heb mijn OBA app in igcognito modus geopend. Incognito zorgt ervoor dat bepaalde webactiviteiten niet worden opgeslagen. Ik heb deze manier gebruikt om te testen wat er zou gebeuren als ik de localStorage uitzet. 
+<br>
+Echter verandert er niks want ik heb niet gebruik gemaakt van localStorage.
