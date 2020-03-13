@@ -162,4 +162,4 @@ Mogelijke oplossing: als een applicatie afhankelijk is van cookies, is het altij
 <b>8. localStorage uitzetten </b><br>
 Ik heb mijn OBA app in igcognito modus geopend. Incognito zorgt ervoor dat bepaalde webactiviteiten niet worden opgeslagen. Ik heb deze manier gebruikt om te testen wat er zou gebeuren als ik de localStorage uitzet. 
 <br>
-Echter verandert er niks want ik heb niet gebruik gemaakt van localStorage.
+Echter verandert er niks want ik heb geen gebruik gemaakt van localStorage.
