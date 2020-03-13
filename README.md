@@ -67,7 +67,19 @@ Ik denk dat de oplossing bij Firefox in een klein detail ligt. Zo zou ik voor di
 ## Testen op de screenreader
 Om de "screenreader" te activeren op mijn Macbook, ben ik erachter gekomen dat er een VoiceOver is. Deze is de vinden via het apple panel op systeemvoorkeuren > toegangelijkheid > VoiceOver. Vervolgens kan je het activeren. (Daarnaast is er ook een shortcut voor). Daarnaast biedt Apple ook een training aan over hoe je met de VoiceOver te werk kan gaan.
 
-Ik heb de VoiceOver gebruikt om mijn OBA APP.
+<i>VoiceOver spreekt beschrijvingen uit van onderdelen op het scherm en kan worden gebruikt om de computer uitsluitend met het toetsenbord te bedienen.</i>
+
+Ik heb de VoiceOver gebruikt op  mijn OBA APP. Het valt me op dat de VoiceOver begint bij de URL en dit ook duidelijk aangeeft met een zwarte border over het element. Met een monotone stem wordt er opgelezen wat er staat. Dit wordt ook weergegeven op het scherm binnen het zwarte kadertje. Je kan navigeren door je toetsenbord te gebruiken (en daarnaast ook je muis). Toen ik dit probeerde kwam ik er al snel achter dat ik perongeluk shortcuts activeerde waardoor ik op een "help menu" terecht kwam. 
+<br>
+Daarnaast kwam ik terecht op `input` elementen. Als de foucs hierop ligt, wordt de waarde van het attribuut `placeholder` opgelezen. Dit is dus erg belangrijk om te gebruiken. Daarnaast kan je op buttons "klikken" door op je control-option-spatie te drukken. Op deze manier kwam ik op mijn resultatenscherm. `img` elementen worden niet "opgelezen", aangezien ik daar geen `alt` attributen heb toegevoegd. Ook worden pop-us (met een `alert`) duidelijk voorgelezen.
+<br>
+Daarnaast kan je naar de detailpagina navigeren waarbij een artikel wordt weergegeven die uit tekst bestaat. Deze tekst kan geselecteerd worden, waardoor de screenreader dit gaat oplezen.
+<br>
+Een paar screenshots die weergeven wat er exact gebeurt:
+
+
+
+Kortom het is belangrijk om attributen te gebruiken bij je HTML elementen die niet direct voorzich kunnen spreken (bijvoorbeeld een afbeelding voor slechtziende mensen). Deze worden namelijk opgelezen door de screenreader en kan meer duidelijkheid bieden aan de gebruiker.
 
 
 
