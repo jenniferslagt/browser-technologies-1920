@@ -8,7 +8,7 @@ https://jenniferslagt.github.io/project-1-1920/index.html
 
 
 ## Testen op 3 verschillende devices (en browsers)
-### 1. iPad 
+### 1. Android tablet 
 Gebruikte browser: Chrome 80 (on a HTC Nexus 0 running Android)
 <br>
 
