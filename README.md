@@ -6,7 +6,7 @@ The core function of my app is to make a grocery list and to share this with oth
 ## Wireflow
 <br>
 
-![wireflow_BT](https://user-images.githubusercontent.com/45489420/77059054-9d3a8f80-69d6-11ea-908b-5f2647d1c104.png)
+![wireflow_BT](https://user-images.githubusercontent.com/45489420/77082392-4942a180-69fc-11ea-835d-c7f4b7a11119.png)
 
 ## The 3 layers
 
