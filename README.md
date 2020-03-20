@@ -19,7 +19,7 @@ The core function of my app is to make a grocery list and to share this with oth
 ![wireflow_BT](https://user-images.githubusercontent.com/45489420/77082392-4942a180-69fc-11ea-835d-c7f4b7a11119.png)
 
 ## The 3 layers
-
+Take a look at my wiki 
 
 ## Sources
 
