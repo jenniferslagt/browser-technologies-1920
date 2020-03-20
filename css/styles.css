@@ -1,5 +1,5 @@
 body {
-    margin: 2vw;
+    margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3vw;
@@ -13,6 +13,38 @@ body {
     /* overflow: hidden; */
     display: flex;
 }
+
+/* 
+.start-screen {
+    background-image: url('../background-supermarket.jpg');
+    background-size: cover;
+    height: 80vw;
+    width: 100%;
+}
+
+h1.start-title {
+    text-align: center;
+    margin: 10vw 20vw 10vw 20vw;
+} */
+/* 
+.start-btn {
+    font-size: 3vw;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: rgb(255, 107, 27);
+    background: linear-gradient(157deg, rgba(255, 107, 27, 1) 15%, rgba(255, 169, 16, 1) 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+} */
+/* 
+.container {
+    background: #f8f8f8;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+} */
 
 .task-list {
     line-height: 1.7em;
