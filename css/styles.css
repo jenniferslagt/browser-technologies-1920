@@ -1,171 +1,179 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3vw;
-    /* Backup color of the linear-gradient isn't supported */
-    background: rgb(255, 107, 27);
-    background: linear-gradient(157deg, rgba(255, 107, 27, 1) 15%, rgba(255, 169, 16, 1) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    /* overflow: hidden; */
-    display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3vw;
+  background: rgb(255, 107, 27);
+  background: linear-gradient(157deg,
+      rgba(255, 107, 27, 1) 15%,
+      rgba(255, 169, 16, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
-/* 
-.start-screen {
-    background-image: url('../background-supermarket.jpg');
-    background-size: cover;
-    height: 80vw;
-    width: 100%;
+section {
+  background: #eeeeee;
+  /* border-radius: 50px 50px 0 0; */
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
 }
-
-h1.start-title {
-    text-align: center;
-    margin: 10vw 20vw 10vw 20vw;
-} */
-/* 
-.start-btn {
-    font-size: 3vw;
-    padding: 10px 30px;
-    text-decoration: none;
-    background: rgb(255, 107, 27);
-    background: linear-gradient(157deg, rgba(255, 107, 27, 1) 15%, rgba(255, 169, 16, 1) 100%);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 50px;
-} */
-/* 
-.container {
-    background: #f8f8f8;
-    position: absolute;
-    width: 100%;
-    height: 30%;
-} */
 
 .task-list {
-    line-height: 1.7em;
-    list-style: circle;
-    padding-left: 1.1em;
+  line-height: 1.7em;
+  list-style: circle;
+  padding-left: 1.1em;
 }
 
 .list-name {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .list-name:hover,
 .list-name:focus {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .todo-list {
-    background: #f8f8f8;
-    color: black;
-    padding: 15px;
-    width: 60vw;
+  background: #f8f8f8;
+  color: black;
+  padding: 15px;
+  width: 60vw;
 }
 
 .todo-header {
-    background: #e5e5e5;
-    padding: 15px 15px 15px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: #e5e5e5;
+  padding: 15px 15px 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .list-title {
-    margin: 0 1vw 0 0;
+  margin: 0 1vw 0 0;
 }
 
 form {
-    display: flex;
+  display: flex;
 }
 
 .btn-task,
 .btn-list {
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: inherit;
-    background-color: black;
-    border: none;
-    border-radius: 50px;
-    width: 6vw;
-    height: 6vw;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: inherit;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  width: 6vw;
+  height: 6vw;
 }
 
 .btn-task:hover,
 .btn-task:focus,
 .btn-list:hover,
 .btn-list:focus {
-    transition: 0.3s ease-in;
-    font-size: 4vw;
+  transition: 0.3s ease-in;
+  font-size: 4vw;
 }
 
 .new {
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50px;
-    font-size: inherit;
-    padding: 5px 5px 5px 15px;
-    color: black;
-    order: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50px;
+  font-size: inherit;
+  padding: 5px 5px 5px 15px;
+  color: black;
+  order: 0;
 }
 
 .new:focus,
 .new:hover {
-    transition: 0.3s;
-    border: solid 2px white;
+  transition: 0.3s;
+  border: solid 2px white;
 }
 
 .new:focus::placeholder,
 .new:hover::placeholder {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .active-list {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .todo-list {
-    margin: 70px 0 0 70px;
-    padding: 0;
-    line-height: 1.7em;
+  margin: 70px 0 0 70px;
+  padding: 0;
+  line-height: 1.7em;
 }
 
 .task-count {
-    margin: 0;
-    font-size: 2vw;
+  margin: 0;
+  font-size: 2vw;
 }
 
 .todo-body {
-    padding: 20px;
+  padding: 20px;
 }
 
-[type='checkbox'] {
-    position: absolute;
-    height: 4vw;
+[type="checkbox"] {
+  position: absolute;
+  height: 4vw;
 }
 
-[type='checkbox']:checked+label {
-    color: gray;
-    text-decoration: line-through gray;
+[type="checkbox"]:checked+label {
+  color: gray;
+  text-decoration: line-through gray;
 }
 
 .task label {
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 25px;
-    padding-bottom: 5px;
-    border: none;
-    border-bottom: 2px solid lightgray;
-    /* position: relative; */
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 25px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid lightgray;
 }
 
 .delete-stuff {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share,
+.overlay {
+  display: none;
+}
+
+.show-share {
+  display: block;
+}
+
+.overlay {
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.share {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  width: 50%;
+  z-index: 1;
+  padding: 1em;
+  background: white;
+  color: black;
 }
