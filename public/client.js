@@ -73,6 +73,7 @@ function deleteList() {
             // Delete it!
             clearElement(listsContainer);
             localStorage.clear();
+            location.reload();
         } else {
             // Do nothing!
         }
@@ -117,7 +118,7 @@ shareButton.addEventListener('click', function () {
     if (navigator.share) {
         navigator.share({
             title: `${title}`,
-            list: list
+            list: `${list}`
         }).then(function () {
             console.log("Thanks for sharing!");
         }).catch(console.error);
