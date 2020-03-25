@@ -14,6 +14,7 @@ const LOCAL_STORAGE_LIST_KEY = 'task.lists'
 // it's getting out in a object or give us a empty array to start (default)
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || []
 
+
 newListForm.addEventListener('submit', element => {
     // every time when you click on enter, the pages refreshed, preventDefault prevents this
     element.preventDefault()
@@ -114,10 +115,9 @@ shareButton.addEventListener('click', function () {
 
 shareButton.addEventListener('click', function () {
     if (navigator.share) {
-        save()
         navigator.share({
             title: `${title}`,
-            url: `${url}`
+            list: list
         }).then(function () {
             console.log("Thanks for sharing!");
         }).catch(console.error);
