@@ -114,6 +114,7 @@ shareButton.addEventListener('click', function () {
 
 shareButton.addEventListener('click', function () {
     if (navigator.share) {
+        save()
         navigator.share({
             title: `${title}`,
             url: `${url}`
