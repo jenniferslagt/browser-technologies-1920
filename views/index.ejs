@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <title> Grocery list App </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class=" container">
+    <h2> My grocery list </h2>
+
+    <form action="/addproduct" method="POST">
+
+      <h3> Added products </h3>
+
+      <% for( var i = 0; i < task.length; i++){ %>
+      <li><input type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
+      <% } %>
+
+      <input type="text" name="newproduct" placeholder="Add new product">
+      <button> + </button>
+
+      <button formaction="/removeproduct" type="submit" id="top"> Clear </button>
+
+    </form>
+
+    <h3> Checked products </h3>
+
+    <% for(var i = 0; i < complete.length; i++){ %>
+    <li><input type="checkbox" checked><%= complete[i] %> </li>
+    <% } %>
+
+  </div>
+
+</body>
+
+</html>
