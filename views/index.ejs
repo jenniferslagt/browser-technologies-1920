@@ -1,37 +1,64 @@
 <html>
 
 <head>
-  <title> Grocery list App </title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Grocery list App</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-  <div class=" container">
-    <h2> My grocery list </h2>
+  <div class="container">
+    <h1>My grocery list</h1>
 
     <form action="/addproduct" method="POST">
+      <input id="rad1" type="checkbox" name="rad" /><label for="rad1"><b>Added</b> products</label>
 
-      <h3> Added products </h3>
+      <!-- The added products -->
+      <div class="added-products">
+        <% for( var i = 0; i < task.length; i++){ %>
+        <li class="product">
+          <ul>
+            <input type="checkbox" id="added" name="check" value="<%= task[i] %>" />
+            <label for="checked"> <%=task[i] %></label>
+          </ul>
+        </li>
+        <% } %>
+      </div>
 
-      <% for( var i = 0; i < task.length; i++){ %>
-      <li><input type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
-      <% } %>
+      <!-- Add a new product -->
+      <input type="text" name="newproduct" placeholder="Add new product" />
+      <button add>+</button>
 
-      <input type="text" name="newproduct" placeholder="Add new product">
-      <button> + </button>
-
-      <button formaction="/removeproduct" type="submit" id="top"> Clear </button>
-
+      <!-- Move the checked products to the "Completed" -->
+      <button formaction="/removeproduct" type="submit" id="top">
+        Check!
+      </button>
     </form>
 
-    <h3> Checked products </h3>
+    <input id="rad2" type="checkbox" name="rad" /><label for="rad2"><b>Checked</b> products</label>
 
-    <% for(var i = 0; i < complete.length; i++){ %>
-    <li><input type="checkbox" checked><%= complete[i] %> </li>
-    <% } %>
+    <!-- The completed products -->
+    <div class="checked-products">
+      <div class="clear"> &#128465</div>
+      <ul>
+        <% for(var i = 0; i < complete.length; i++){ %>
+        <li><input type="checkbox" checked /><%= complete[i] %></li>
+        <% } %>
+      </ul>
+    </div>
 
+    <!-- Delete or share the list -->
+    <button class="btn-delete" delete-btn>Delete list</button>
+    <button class="btn-share" share-btn>Share list</button>
   </div>
 
+  <!-- The (in)visible share  -->
+  <div class="share">
+    <h3>Share</h3>
+    <a href="h">ha</a>
+  </div>
+  <div class="overlay">
+
+    <script src="client.js"></script>
 </body>
 
 </html>

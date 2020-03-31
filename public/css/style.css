@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000c47;
+    letter-spacing: 2px;
+    background-color: #d5e1f8;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+h1 {
+    padding: 20px 10px 0px 20px;
+}
+
+.added-products,
+.checked-products {
+    padding: 20px 10px 0px 20px;
+    list-style-type: none;
+    background: #d5e1f8;
+}
+
+.added-products h2,
+.checked-products h2 {
+    position: fixed;
+}
+
+
+li {
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+li:hover,
+li:focus {
+    background: #f8f8f8;
+}
+
+input[id="rad1"]+label:hover,
+input[id="rad1"]+label:focus,
+input[id="rad2"]+label:hover,
+input[id="rad2"]+label:focus {
+    cursor: pointer;
+}
+
+input[id="added"] {
+    all: unset;
+    background: white;
+    border: 2px solid gray;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+input[type="text"] {
+    all: unset;
+    transition: 0.5s;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+}
+
+/* Styling the buttons */
+button {
+    background: #f8f8f8;
+    height: 40px;
+    width: auto;
+    border-radius: 30px;
+    color: #a7a7a7;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    color: white;
+    background: #ff5e00;
+    transition: 0.5s;
+}
+
+button[add] {
+    width: 45px;
+    height: auto;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    background: #ff5e00;
+    transition: 0.5s;
+}
+
+button[add]:hover,
+button[add]:focus {
+    background: #000c47;
+}
+
+/* Navigation between added and checked products */
+input[id="rad1"]:checked~.added-products {
+    display: none;
+    transition: 1s;
+}
+
+input[id="rad2"]:checked~.checked-products {
+    display: none;
+    transition: 1s;
+}
+
+
+/* Styling the checkboxes */
+input[id="rad1"],
+input[id="rad2"] {
+    display: none;
+}
+
+input[id="rad1"]+label:before,
+input[id="rad2"]+label:before {
+    content: "❯";
+    transform: rotate(-90deg);
+    font-size: 20px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 18px;
+    height: auto;
+    padding: 3px;
+    margin-right: 10px;
+    transition: 0.5s;
+    text-align: right;
+}
+
+input[id="rad1"]:checked+label:before,
+input[id="rad2"]:checked+label:before {
+    transform: rotate(90deg);
+}
+
+.clear {
+    all: unset;
+}
+
+/* Add style to the share option */
+.share,
+.overlay {
+    display: none;
+}
+
+.show-share {
+    display: block;
+}
+
+.overlay {
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.share {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    width: 50%;
+    z-index: 1;
+    padding: 1em;
+    background: white;
+    color: black;
+}

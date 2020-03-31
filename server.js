@@ -2,27 +2,28 @@ const path = require('path')
 const fs = require('fs-extra');
 // const PORT = process.env.PORT || 3000;
 //dependencies required for the app
-var express = require("express");
-var bodyParser = require("body-parser");
-var app = express();
-
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 //placeholders for added task
-let product = [];
-
+let product = JSON.parse(fs.readFileSync('products.json', 'utf8'))
 //placeholders for removed task
 let complete = [];
-
 //post route for adding new task 
+
 app.post("/addproduct", function (req, res) {
     var newProduct = req.body.newproduct;
     //add the new task from the post route
     product.push(newProduct);
+    let jsonData = JSON.stringify(product);
+    fs.writeFileSync("products.json", jsonData);
     res.redirect("/");
 });
 
@@ -41,17 +42,12 @@ app.post("/removeproduct", function (req, res) {
     }
     res.redirect("/");
 });
-
 //render the ejs and display added task, completed task
 app.get("/", function (req, res) {
     res.render("index", {
         task: product,
         complete: complete
     });
-    console.log("producten", product)
-    let jsonData = JSON.stringify(product);
-    console.log('jsondata', jsonData)
-    fs.writeFileSync("products.json", jsonData);
 });
 
 //set app to listen on port 3000
