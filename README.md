@@ -13,18 +13,21 @@ So my target audience are people who can't go to the supermarket themselves <b>a
 
 
 ## How does my code work?
-Well, to explain my code, I splitted it up in a few parts:
-1. 
-2.
-3.
-
+Well, to explain my code, I splitted it up in a few parts: <br>
+1. The server-side <br>
+2. The client-side <br>
+3.      <br>
 
 ## Progressive Enhancement
+<b>What is Progressive Enhancement?</b>
+Progressive enhancement (PE) is a strategy for web design that emphasizes core webpage content first. You use the most basic webtechnologies (think about simple HTML and CSS. Users will always have a strong foundation to fall back on as complexity is introduced to the project. The goal is to make the website work for <b>everyone</b>. Think about differents types of users, browsers or devices. After this, you can improve the user experience by adding enhancements. <br>
 
-## Feature Detection
+Web developers need to start with a simple, clean, semantic HTML to navigate through (content of) the application: this is called the first layer. The second layer is CSS. Developers can display or change the visual presentation of the website's content. The third layer is JavaScript. The developers can provide the users an enhanced usability. But don't forget that this part is more about "client" JavaScript, instead of server JavaScript.
 
+"It's a journey from simplicity to complexity". - Sam Dwyer
 
-## The 3 layers
+<b>How did I apply PE?</b>
+To apply PE, I used the 3 layers: <br>
 <details>
 <summary>The functional, reliable layer</summary>
 <br>
@@ -45,9 +48,14 @@ This is how you dropdown.
 This is how you dropdown.
 </details>
 
+## Fallbacks
+
+
+## Feature Detection
+
+
 ## Testing my app
 
-## Fallbacks
 
 
 ## The 8 features
