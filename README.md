@@ -53,15 +53,12 @@ This is the part where CSS displays or changes the visual presentation of the co
 At this layer I wanted give the app more "character". I added some enhancements with (client) JavaScript: <br>
 1. I added a share option with `navigator.share`. In this way you can share a list with the added products based on the installed apps on the user's phone. </details>
 
-## Fallbacks
-- Background-color:
-- `navigator.share`
-
-
 ## Testing my app with browserstack
 
-## Feature Detection
 
+## Feature Detection and fallbacks
+- Background-color:
+- `navigator.share`
 
 
 ## The 8 features
