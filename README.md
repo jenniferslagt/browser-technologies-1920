@@ -31,38 +31,58 @@ To apply PE, I used the 3 layers: <br>
 <details>
 <summary>The functional, reliable layer</summary>
 <br>
-This is how you dropdown.
+This is the most basic layer. I added clean, semantic HTML (within a EJS template) code to make the core function of my app work. I also used the website "caniuse.com" to check the browser support. It's very important that this part works on the most browsers and devices. I also tested this with browserstack. Don't forget this is also the part where I used fallbacks. What if JavaScript isn't supported? Maybe HTML can offer a solution. 
 </details>
 <br>
 
 <details>
 <summary>The usable layer </summary>
 <br>
-This is how you dropdown.
+This is the part where CSS displays or changes the visual presentation of the content. I asked myself this question: "Which information is important to show on which moment?" When do users (unstable people or "shoppers") want to see your added "unchecked" products of your grocery list? When do they want to see the "checked" products? <br>
+  
+ I choosed to make a kind of dropdown list. There are actually two lists: 
+ 1. The added "unchecked" list with products.
+ 2. The checked list with products. 
+ If they click on the list name, the list slides in or slides out. I let the user choose when they want to see a list. 
 </details>
 <br>
 
 <details>
 <summary>The pleasurable layer</summary>
 <br>
-This is how you dropdown.
-</details>
+At this layer I wanted give the app more "character". I added some enhancements with (client) JavaScript: <br>
+1. I added a share option with `navigator.share`. In this way you can share a list with the added products based on the installed apps on the user's phone. </details>
 
 ## Fallbacks
+- Background-color:
+- `navigator.share`
 
+
+## Testing my app with browserstack
 
 ## Feature Detection
 
 
-## Testing my app
-
-
 
 ## The 8 features
+I tried to apply the 8 features as much as possible to deliver a "delightfull" user experience! 
 
 
-## Conclusions (learning goals / criteria)
+<b> 1. Images </b>
+<b> 2. Custom fonts </b>
+<b> 3. Colors / colorblindness </b>
+<b> 4. Navigating without a mouse or trackpad </b>
+<b> 5. Network </b>
+<b> 6. Turn off JavaScript </b>
+<b> 7. Refuse cookies </b>
+<b> 8. Turn off LocalStorage </b>
+
+## Conclusion
+
+
 
 ## Sources
 
+
 ## Credits
+In the past weeks we all worked from home, because of the virus. This makes it harder to communicate and to concentrate on your work. That's why I would like to thank my fellow students, the help students and the teachers for helping me during this time.
