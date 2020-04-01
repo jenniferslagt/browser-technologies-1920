@@ -82,7 +82,12 @@ I tried to apply the 8 features as much as possible to deliver a "delightfull" u
 
 
 ## Sources
-
+* [Progressive Enhancement: What It Is, And How To Use It?](https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/)
+* [HTML: The Inaccessible Parts](https://daverupert.com/2020/02/html-the-inaccessible-parts/)
+* [Accessibility Through Semantic HTML](https://24ways.org/2017/accessibility-through-semantic-html/)
+* [The Role of Enhancement in Web Design](https://www.nngroup.com/articles/enhancement/)
+* [A Theory of User Delight: Why Usability Is the Foundation for Delightful Experiences](https://www.nngroup.com/articles/theory-user-delight/)
+* [Make the Web Work For Everyone](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
 
 ## Credits
 In the past weeks we all worked from home, because of the virus. This makes it harder to communicate and to concentrate on your work. That's why I would like to thank my fellow students, the help students and the teachers for helping me during this time.
