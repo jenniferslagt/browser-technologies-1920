@@ -57,11 +57,14 @@ At this layer I wanted give the app more "character". I added some enhancements 
 
 
 ## Feature Detection and fallbacks
+
+
+
 - Background-color:
 - `navigator.share`
 
 
-## The 8 features
+### The 8 features
 I tried to apply the 8 features as much as possible to deliver a "delightfull" user experience! 
 
 
