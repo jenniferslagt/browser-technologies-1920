@@ -2,10 +2,26 @@
 
 
 
-## Description
-The core function of my app is to make a grocery list and to share this with other people. In this way, these people can go to the supermarket to get the groceries. For example, at this moment people are staying home or are in quarataine because of the corona virus. So this the target audience are actually people who can't go to the supermarket themselves and people who wants the help this people.
+## Description (Problem and solution)
+<b>Problem</b> <br>
+The problem is that some people can't go to the supermarket because they aren't stable enough. Think about older people or sick people. For example, at this moment people are staying home because of the corona virus. They can't go anywhere.
 
-## Working with Node.js and EJS template
+<b> Solution </b> <br>
+My app offers a simple solution: "unstable" people can make a grocery list and can share this to people who wants to help them. If this is shared, they can use this app while doing groceries. They can "check" every product by adding it to "checked products".  
+<br>
+So my target audience are people who can't go to the supermarket themselves <b>and</b> people who wants the help this people.
+
+
+## How does my code work?
+Well, to explain my code, I splitted it up in a few parts:
+1. 
+2.
+3.
+
+
+## Progressive Enhancement
+
+## Feature Detection
 
 
 ## The 3 layers
@@ -29,10 +45,15 @@ This is how you dropdown.
 This is how you dropdown.
 </details>
 
-### 1
+## Testing my app
 
-### 2
-### 3
+## Fallbacks
+
+
+## The 8 features
+
+
+## Conclusions (learning goals / criteria)
 
 ## Sources
 
