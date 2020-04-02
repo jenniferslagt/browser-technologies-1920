@@ -10,53 +10,71 @@
     <h1>My grocery list</h1>
 
     <form action="/addproduct" method="POST">
-      <input id="rad1" type="checkbox" name="rad" /><label for="rad1"><b>Added</b> products</label>
+      <input id="rad1" type="checkbox" name="rad" />
+      <label for="rad1"><b>Added</b> products</label>
 
       <!-- The added products -->
-      <div class="added-products">
+      <ul class="added-products">
         <% for( var i = 0; i < task.length; i++){ %>
         <li class="product">
-          <ul>
-            <input type="checkbox" id="added" name="check" value="<%= task[i] %>" />
-            <label for="checked"> <%=task[i] %></label>
-          </ul>
+          <input type="checkbox" class="added" id="added" name="check" value="<%= task[i] %>" />
+          <label for="added"> <%=task[i] %></label>
+          <button class="delete-added-item">x</button>
         </li>
         <% } %>
-      </div>
+      </ul>
 
       <!-- Add a new product -->
-      <input type="text" name="newproduct" placeholder="Add new product" />
-      <button add>+</button>
+      <div add-new-product>
+        <input type="text" name="newproduct" placeholder="Add new product" />
+        <button add>+</button>
+      </div>
+
 
       <!-- Move the checked products to the "Completed" -->
-      <button formaction="/removeproduct" type="submit" id="top">
-        Check!
+      <button check formaction="/removeproduct" type="submit" id="top">
+        <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.53 88.84">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #000c47;
+                stroke-miterlimit: 10;
+                stroke-width: 18px;
+              }
+            </style>
+          </defs>
+          <title>Check icon</title>
+          <path class="cls-1"
+            d="M56.8,157.77q6.2,5.38,12.58,10.79,10.61,9,21.18,17.7c8.22-12.47,17.44-25.45,27.8-38.85,8.36-10.81,16.84-21.07,25.3-30.78"
+            transform="translate(-50.91 -110.72)" />
+        </svg>
       </button>
     </form>
 
     <input id="rad2" type="checkbox" name="rad" /><label for="rad2"><b>Checked</b> products</label>
 
     <!-- The completed products -->
-    <div class="checked-products">
-      <div class="clear"> &#128465</div>
-      <ul>
-        <% for(var i = 0; i < complete.length; i++){ %>
-        <li><input type="checkbox" checked /><%= complete[i] %></li>
-        <% } %>
-      </ul>
-    </div>
+    <ul class="checked-products">
+      <% for(var i = 0; i < complete.length; i++){ %>
+      <li><input type="checkbox" checked /><%= complete[i] %>
+        <button class="delete-completed-item">x</button>
+      </li>
+      <% } %>
+    </ul class="checked-products">
 
     <!-- Delete or share the list -->
-    <button class="btn-delete" delete-btn>Delete list</button>
-    <button class="btn-share" share-btn>Share list</button>
-  </div>
+    <div class="delete-share-container">
+      <button class="btn-delete" delete-list-btn>Delete list</button>
+      <button class="btn-share" share-btn>Share list</button>
+    </div>
 
-  <!-- The (in)visible share  -->
-  <div class="share">
-    <h3>Share</h3>
-    <a href="h">ha</a>
-  </div>
-  <div class="overlay">
+    <!-- The (in)visible share  -->
+    <button class="share">
+      <h3>Share</h3>
+    </button>
+    <div class="overlay">
+    </div>
 
     <script src="client.js"></script>
 </body>

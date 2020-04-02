@@ -13,7 +13,8 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 //placeholders for added task
-let product = JSON.parse(fs.readFileSync('products.json', 'utf8'))
+let product = JSON.parse(fs.readFileSync('products.json', 'utf8'));
+
 //placeholders for removed task
 let complete = [];
 //post route for adding new task 
@@ -42,6 +43,7 @@ app.post("/removeproduct", function (req, res) {
     }
     res.redirect("/");
 });
+
 //render the ejs and display added task, completed task
 app.get("/", function (req, res) {
     res.render("index", {

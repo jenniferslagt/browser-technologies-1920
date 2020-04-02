@@ -1,11 +1,18 @@
+/* @supports not (background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgba(175, 198, 244, 1) 100%)) {
+    body {
+        background: #d5e1f8;
+    }
+} */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: #000c47;
     letter-spacing: 2px;
-    background-color: #d5e1f8;
     scroll-behavior: smooth;
+    background: #d5e1f8;
+    background: linear-gradient(157deg, rgb(231, 236, 247) 0%, rgba(213, 225, 248, 1) 100%);
 }
 
 .container {
@@ -21,14 +28,8 @@ h1 {
 .checked-products {
     padding: 20px 10px 0px 20px;
     list-style-type: none;
-    background: #d5e1f8;
+    background: transparent;
 }
-
-.added-products h2,
-.checked-products h2 {
-    position: fixed;
-}
-
 
 li {
     background: white;
@@ -50,29 +51,12 @@ input[id="rad2"]+label:focus {
     cursor: pointer;
 }
 
-input[id="added"] {
-    all: unset;
-    background: white;
-    border: 2px solid gray;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-}
-
-input[type="text"] {
-    all: unset;
-    transition: 0.5s;
-    padding: 10px;
-    border-bottom: 2px solid gray;
-}
-
 /* Styling the buttons */
 button {
     background: #f8f8f8;
-    height: 40px;
-    width: auto;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 30px;
-    color: #a7a7a7;
     cursor: pointer;
     padding: 10px;
     border: none;
@@ -87,7 +71,7 @@ button:focus {
 }
 
 button[add] {
-    width: 45px;
+    min-width: 45px;
     height: auto;
     font-size: 20px;
     border-radius: 30px;
@@ -101,17 +85,34 @@ button[add]:focus {
     background: #000c47;
 }
 
+button[check] {
+    position: relative;
+    padding-top: 3px;
+    min-width: 43px;
+    min-height: 43px;
+    margin: 20px;
+}
+
+button[check]:hover,
+button[check]:focus .cls {
+    stroke: #fff;
+}
+
 /* Navigation between added and checked products */
 input[id="rad1"]:checked~.added-products {
     display: none;
     transition: 1s;
 }
 
-input[id="rad2"]:checked~.checked-products {
+
+input[id="rad1"]:checked {
     display: none;
-    transition: 1s;
 }
 
+input[id="rad2"]:checked~.checked-products {
+    display: none;
+    transition: 1s ease-out;
+}
 
 /* Styling the checkboxes */
 input[id="rad1"],
@@ -126,10 +127,10 @@ input[id="rad2"]+label:before {
     font-size: 20px;
     border-radius: 30px;
     display: inline-block;
-    width: 18px;
+    min-width: 18px;
     height: auto;
     padding: 3px;
-    margin-right: 10px;
+    margin: 0 10px 0 20px;
     transition: 0.5s;
     text-align: right;
 }
@@ -139,14 +140,43 @@ input[id="rad2"]:checked+label:before {
     transform: rotate(90deg);
 }
 
-.clear {
+/* input[id="added"]+label:before {
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+input[id="added"]:checked+label:before {
+    content: "\2714";
+    color: #ff5e00;
+    margin-left: -20px;
+} */
+
+/* 
+input[type="checkbox"] {
+    opacity: 0;
+} */
+
+/* Add style to delete buttons */
+.delete-completed-item,
+.delete-added-item {
     all: unset;
+    min-width: 15px;
+    min-height: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #f8f8f8;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    right: 200px;
 }
 
 /* Add style to the share option */
 .share,
 .overlay {
     display: none;
+    position: fixed;
 }
 
 .show-share {
@@ -158,20 +188,59 @@ input[id="rad2"]:checked+label:before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-width: 100%;
+    min-height: 100vh;
+    min-height: 100%;
     background: black;
 }
 
 .share {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
     margin: auto;
-    width: 50%;
-    z-index: 1;
+    min-width: 50%;
     padding: 1em;
     background: white;
     color: black;
+}
+
+.delete-share-container {
+    background: white;
+    max-width: 480px;
+    min-width: 450px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+}
+
+
+input[type="text"] {
+    all: unset;
+    transition: 0.5s;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    background: transparent;
+    margin-left: 20px;
+}
+
+input[type="text"],
+button[add] {
+    position: fixed;
+    bottom: 20px;
+    z-index: 100;
+}
+
+button[add] {
+    margin-left: 230px;
+}
+
+.btn-share {
+    position: absolute;
+}
+
+.btn-delete {
+    margin-left: 290px;
+    margin-right: 10px;
 }
