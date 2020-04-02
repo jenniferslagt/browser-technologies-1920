@@ -85,26 +85,27 @@ I added more than one value to the property `font-family` in CSS , because the f
 
 <b> 3. Colors / colorblindness </b><br>
 Well, the property `background-color` is pretty good supported. But if you add a linear gradient to this, it is not good supported. That's why I added `@supports not` (a CSS rule):<br>
-``` @supports not (background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgba(175, 198, 244, 1) 100%)) {
+
+` @supports not (background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgba(175, 198, 244, 1) 100%)) {
     body {
         background: #d5e1f8;
     }
-} ```
+} `
 
 This means that <b>if</b> the linear-gradient() is not supported (which means the output is true), then execute `background: #d5e1f8;`.
 But I also checked `@supports` and it wasn't very well supported, so just let that in a comment. This was my final solution:
 
-``` body { 
+` body { 
       background: #d5e1f8;
       background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgb(153, 183, 245) 100%);
-    } ```
+    } `
     
    <br>
 Don't forget that the last property is getting excuted (when this is supported)!    
 <br>
 
 <b> 4. Navigating without a mouse or trackpad </b><br>
-Well, the idea of my app is based on a mobile device, instead of a computer or a tablet.. But if the mouse or trackpad is turned off, 
+Well, the idea of my app is based on a mobile device, instead of a computer or a tablet.. But if the mouse or trackpad is turned off, I would like to focus on the core functionality.
 
 <b> 5. Network </b><br>
 
