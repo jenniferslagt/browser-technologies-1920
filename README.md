@@ -49,10 +49,16 @@ At this layer I wanted give the app more "character". I added some enhancements 
 
 
 ## Feature Detection and fallbacks
+Feature detection means that you're searching for features in your code that can cause a problem because the feature not supported in the browser. You can solve this by: <br>
+1. Use @supports in your CSS. You can use `@supports` or `@supports not`. Then follows a condition. If the outcome is true, than the rules after the condition is excecuted. In this way you can make a fallback. (See feature 3)
+2. Use double CSS lines to have a fallback. But it's the order of each rule is important: the last one is getting excecuted if this is supported. (See feature 3)
+3. You can also check this in JavaScript. The browser will return a true or false. (See navigator.share)
+
+
+I tried to search for this feature by checking the 8 features.
 
 ### The 8 features
 I tried to apply the 8 features as much as possible to deliver a "delightfull" user experience! 
-
 
 <b> 1. Images </b><br>
 If you have a product in the list, you can delete it by clicking on the button with a "X" on it. First, I added an image within this button, but that didn't work out.. As a solution I used a HTML entitity: `&#x2716;`. This shows a bold cross of the button. But when I checked this on caniuse.com, I couldn't believe my eyes. [Can I use entities?](https://caniuse.com/#search=entities) The answer was no. It says that entities are very bad supported, but I doubted it, so I googled further. 
