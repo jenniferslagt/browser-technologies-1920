@@ -153,6 +153,7 @@ overlay.addEventListener('click', function () {
 * [A Theory of User Delight: Why Usability Is the Foundation for Delightful Experiences](https://www.nngroup.com/articles/theory-user-delight/)
 * [Make the Web Work For Everyone](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
 * [File System | Node.js v13.12.0 Documentation](https://nodejs.org/api/fs.html)
+* caniuse.com
 
 ## Credits
 In the past weeks we all worked from home, because of the virus. This makes it harder to communicate and to concentrate on your work. That's why I would like to thank my fellow students, the help students and the teachers for helping me during this time.
