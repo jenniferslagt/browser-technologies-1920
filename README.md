@@ -100,20 +100,31 @@ But I also checked `@supports` and it wasn't very well supported, so just let th
       background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgb(153, 183, 245) 100%);
     } `
     
-   <br>
-Don't forget that the last property is getting excuted (when this is supported)!    
-<br>
+   </br>
+Don't forget that the last property is getting excuted (when this is supported)!  
+
+</br>
 
 <b> 4. Navigating without a mouse or trackpad </b><br>
-Well, the idea of my app is based on a mobile device, instead of a computer or a tablet.. But if the mouse or trackpad is turned off, I would like to focus on the core functionality.
+Well, the idea of my app is based on a mobile device, instead of a computer or a tablet.. But if the mouse or trackpad is turned off, I would like to focus on the core functionality. Because my HTML is semantic, you can navigate by using the TAB. You start at the lists, then you go to the delete button and after the added list you go to the form where you can add a product! You can type it in and then click on enter.  
 
 <b> 5. Network </b><br>
+Well, if the network is not that fast, my app still works fine. That because I used Node.js (and express)! In this way, I am trying to render the core functionality on the server side. So upgrading you're list without a good network is not a problem.
+I checked this with inspect > network > slow 3g. I also added a service worker. After the first view, the page can be visited offline!</br>
 
 <b> 6. Turn off JavaScript </b><br>
+I used server JavaScript (server.js) and client JavaScript (client.js) to render the pages and to add more interaction. I made the core functionality in the server JavaScript, and the detailed interactive part in the client JavaScript. I disabled JavaScript easily with the Web Developer plugin from chrome. A part of the app works: you can still add items to your "Added products" and to "checked products". But deleting a product or list didn't work. So actually the server JavaScript did work, the client JavaScript didn't. So the server JavaScript can be a fallback of the client JavaScript.</br>
+
+But I also used CSS instead of JavaScript. CSS is not only about visual presentation; it's also for interaction. In this case, CSS can offer a fallback when the JavaScript is disabled. For example, when you click on a list, the products slides in or out the list! This is why PE is so important: begin with the basic webtechnologies!
+</br>
 
 <b> 7. Refuse cookies </b><br>
+I used the Web Developer plugin again to disable the cookies. If you disable this, nothing changes. So I also didn't make a fallback page.
 
 <b> 8. Turn off LocalStorage </b><br>
+I didn't use LocalStorage in my app, because I used a package from Node.js called `fs-system`. In this way, I created a database (product.json) where I save the input from the user! I used `readFileSync` for this. This is a good solution when LocalStorage isn't supported. </br>
+
+But to controle this, I used incognito. In this way you can visit a website without any webactivities in the past.
 
 ## Conclusion
 
@@ -126,6 +137,7 @@ Well, the idea of my app is based on a mobile device, instead of a computer or a
 * [The Role of Enhancement in Web Design](https://www.nngroup.com/articles/enhancement/)
 * [A Theory of User Delight: Why Usability Is the Foundation for Delightful Experiences](https://www.nngroup.com/articles/theory-user-delight/)
 * [Make the Web Work For Everyone](https://hacks.mozilla.org/2016/07/make-the-web-work-for-everyone/)
+* [File System | Node.js v13.12.0 Documentation](https://nodejs.org/api/fs.html)
 
 ## Credits
 In the past weeks we all worked from home, because of the virus. This makes it harder to communicate and to concentrate on your work. That's why I would like to thank my fellow students, the help students and the teachers for helping me during this time.
