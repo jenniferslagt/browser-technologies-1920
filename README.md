@@ -1,6 +1,5 @@
 ## App: Make & share your grocery list!
-
-
+![Schermafbeelding 2020-04-02 om 11 10 56](https://user-images.githubusercontent.com/45489420/78231200-bbbe8180-74d2-11ea-9608-1d25916dd2ab.png)
 
 ## Description (Problem and solution)
 <b>Problem</b> <br>
@@ -10,13 +9,6 @@ The problem is that some people can't go to the supermarket because they aren't 
 My app offers a simple solution: "unstable" people can make a grocery list and can share this to people who wants to help them. If this is shared, they can use this app while doing groceries. They can "check" every product by adding it to "checked products".  
 <br>
 So my target audience are people who can't go to the supermarket themselves <b>and</b> people who wants the help this people.
-
-
-## How does my code work?
-Well, to explain my code, I splitted it up in a few parts: <br>
-1. The server-side <br>
-2. The client-side <br>
-3.      <br>
 
 ## Progressive Enhancement
 <b>What is Progressive Enhancement?</b>
@@ -53,7 +45,7 @@ This is the part where CSS displays or changes the visual presentation of the co
 At this layer I wanted give the app more "character". I added some enhancements with (client) JavaScript: <br>
 1. I added a share option with `navigator.share`. In this way you can share a list with the added products based on the installed apps on the user's phone. </details>
 
-## Testing my app with browserstack
+## Testing my app with different browsers
 
 
 ## Feature Detection and fallbacks
