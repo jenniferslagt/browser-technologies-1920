@@ -58,12 +58,6 @@ At this layer I wanted give the app more "character". I added some enhancements 
 
 ## Feature Detection and fallbacks
 
-
-
-- Background-color:
-- `navigator.share`
-
-
 ### The 8 features
 I tried to apply the 8 features as much as possible to deliver a "delightfull" user experience! 
 
@@ -126,8 +120,31 @@ I didn't use LocalStorage in my app, because I used a package from Node.js calle
 
 But to controle this, I used incognito. In this way you can visit a website without any webactivities in the past.
 
-## Conclusion
+## Enhancement: navigator.share
+I added a enhancement based on the installed apps. <u>If</u> you want to share the list, its opens a new tab with installed apps (based on the users device)! If `navigator.share` isn't supported, I made a fallback. Then it opens a new tab and you can actually mail this to someone. This is the code I used: </br>
 
+``` 
+const shareButton = document.querySelector('[share-btn]');
+shareButton.addEventListener("click", function () {
+    if (navigator.share) {
+        navigator.share({
+            url: url,
+            text: productNames
+        }).then(function () {
+            console.log("Thanks for sharing!");
+        }).catch(console.error);
+    } else {
+        overlay.classList.add('show-share');
+        shareModal.classList.add('show-share');
+        window.open('mailto:?subject=My grocery list!&body=This is my grocery list: ' + productNames);
+    }
+});
+
+overlay.addEventListener('click', function () {
+    overlay.classList.remove('show-share');
+    shareModal.classList.remove('show-share');
+})
+ ```
 
 
 ## Sources
