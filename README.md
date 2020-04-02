@@ -75,6 +75,7 @@ I could'nt find more information about this so I have chosen another solution.
 I made a cross in Illustrator CC and exported it as a SVG. This is very well supported according to caniuse.com. `[Check it here.](https://caniuse.com/#search=svg)` This is the code I added:<br>
 
 ``` <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.15 163.93"><defs><style>.cls-1{fill:#1d1d1b;}.cls-2{fill:#fff;}</style></defs><title>A garbage can as a delete icon.</title><path class="cls-1" d="M158.86,226.18h-90a10.82,10.82,0,0,1-10.82-10.82V93.1l-14.62-.15L43,73.85l46.65-.42-.3-10.49L138,62.25,138,73l43.55-.4.66,20.11-12.49.4V215.36A10.82,10.82,0,0,1,158.86,226.18Z" transform="translate(-43.02 -62.25)"/><rect class="cls-2" x="44.29" y="48.53" width="17" height="87.06"/><rect class="cls-2" x="84.79" y="50.56" width="17" height="87.06"/></svg> ```
+
 I also added a title which says something about the svg. 
 <br>
 
@@ -84,13 +85,15 @@ I added more than one value to the property `font-family` in CSS , because the f
 
 <b> 3. Colors / colorblindness </b><br>
 Well, the property `background-color` is pretty good supported. But if you add a linear gradient to this, it is not good supported. That's why I added `@supports not` (a CSS rule):<br>
-```@supports not (background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgba(175, 198, 244, 1) 100%)) {
+``` @supports not (background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgba(175, 198, 244, 1) 100%)) {
     body {
         background: #d5e1f8;
     }
 } ```
+
 This means that <b>if</b> the linear-gradient() is not supported (which means the output is true), then execute `background: #d5e1f8;`.
 But I also checked `@supports` and it wasn't very well supported, so just let that in a comment. This was my final solution:
+
 ``` body { 
       background: #d5e1f8;
       background: linear-gradient(157deg, rgba(213, 225, 248, 1) 0%, rgb(153, 183, 245) 100%);
