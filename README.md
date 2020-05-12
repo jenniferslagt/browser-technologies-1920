@@ -45,9 +45,6 @@ This is the part where CSS displays or changes the visual presentation of the co
 At this layer I wanted give the app more "character". I added some enhancements with (client) JavaScript: <br>
 1. I added a share option with `navigator.share`. In this way you can share a list with the added products based on the installed apps on the user's phone. </details>
 
-## Testing my app with different browsers
-
-
 ## Feature Detection and fallbacks
 Feature detection means that you're searching for features in your code that can cause a problem because the feature not supported in the browser. You can solve this by: <br>
 1. Use @supports in your CSS. You can use `@supports` or `@supports not`. Then follows a condition. If the outcome is true, than the rules after the condition is excecuted. In this way you can make a fallback. (See feature 3)
@@ -144,6 +141,23 @@ overlay.addEventListener('click', function () {
 })
  ```
 
+## Conclusion (learning goals and criteria)
+This is what I've learned during the past weeks:
+* I've learned a lot of about Browser Technologies. I applied this acknowlegde as an enhancement of my application. So my app is made for all kinds of users, browsers and devices (different contexts).
+  - I focussed on the core functionality of my app. This works in all types of contexts. 
+  - I tested my application in different contexts to enhance the user experience.
+ 
+  - I made some fallbacks which are excecuted if a feature isn't supported.
+ 
+* I've learned what Progressive Enhancement is and how to apply this.
+  - I started with making the core functionality of my app. This works for everyone.
+  - The core functionality is made with HTML and CSS.  
+  - After the basics are fixed, I started working on the usable and pleasurable layer.
+* Feature detection: I've learned how show or hide features when it isn't supported.
+  - If JavaScript isn't enabled, the functionals which are based on JavaScript aren't shown at the app. For example, I've made a share button which is made with `navigator.share`, an API of JavaScript. If JavaScript isn't enabled, the share button won't show at all.
+  - I also made some fallbacks in CSS (double code lines or by using @support).
+ 
+  
 
 ## Sources
 * [Progressive Enhancement: What It Is, And How To Use It?](https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/)
