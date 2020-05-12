@@ -1,5 +1,5 @@
 ## App: Make & share your grocery list!
-![Schermafbeelding 2020-04-02 om 11 10 56](https://user-images.githubusercontent.com/45489420/78231200-bbbe8180-74d2-11ea-9608-1d25916dd2ab.png)
+![Schermafbeelding 2020-05-12 om 15 20 04](https://user-images.githubusercontent.com/45489420/81696367-1816a880-9464-11ea-9027-47606899380f.png)
 
 ## Description (Problem and solution)
 <b>Problem</b> <br>
