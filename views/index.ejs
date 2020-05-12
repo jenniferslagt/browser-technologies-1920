@@ -16,10 +16,11 @@
       <!-- The added products -->
       <ul class="added-products">
         <% for( var i = 0; i < task.length; i++){ %>
+        <input type="checkbox" id="delete-btn">
         <li class="product">
-          <input type="checkbox" class="added" id="added" name="check" value="<%= task[i] %>" />
-          <label for="added"> <%=task[i] %></label>
-          <button class="delete-added-item">x</button>
+          <button check formaction="/removeproduct" type="submit" id="top">
+            <input type="checkbox" class="added" id="added" name="check" checked="checked" value="<%= task[i] %>" />
+            <label for="added"> <%=task[i] %></label>
         </li>
         <% } %>
       </ul>
@@ -29,27 +30,6 @@
         <input type="text" name="newproduct" placeholder="Add new product" />
         <button add>+</button>
       </div>
-
-
-      <!-- Move the checked products to the "Completed" -->
-      <button check formaction="/removeproduct" type="submit" id="top">
-        <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.53 88.84">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: none;
-                stroke: #000c47;
-                stroke-miterlimit: 10;
-                stroke-width: 18px;
-              }
-            </style>
-          </defs>
-          <title>Check icon</title>
-          <path class="cls-1"
-            d="M56.8,157.77q6.2,5.38,12.58,10.79,10.61,9,21.18,17.7c8.22-12.47,17.44-25.45,27.8-38.85,8.36-10.81,16.84-21.07,25.3-30.78"
-            transform="translate(-50.91 -110.72)" />
-        </svg>
-      </button>
     </form>
 
     <input id="rad2" type="checkbox" name="rad" /><label for="rad2"><b>Checked</b> products</label>
@@ -57,8 +37,8 @@
     <!-- The completed products -->
     <ul class="checked-products">
       <% for(var i = 0; i < complete.length; i++){ %>
+      <input type="checkbox" id="delete-btn">
       <li><input type="checkbox" checked /><%= complete[i] %>
-        <button class="delete-completed-item">x</button>
       </li>
       <% } %>
     </ul class="checked-products">

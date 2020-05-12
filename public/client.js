@@ -8,11 +8,8 @@ const productNames = document.querySelectorAll('label')
 // // Make a name space, it prevents you from overwriting information that is already in the local storage 
 
 const shareButton = document.querySelector('[share-btn]');
-console.log('ahreerouhae', productNames[0].textContent)
-
-
+shareButton.style.display = "inline";
 shareButton.addEventListener("click", function () {
-
     if (navigator.share) {
         navigator.share({
             url: url,
@@ -25,34 +22,16 @@ shareButton.addEventListener("click", function () {
         shareModal.classList.add('show-share');
         window.open('mailto:?subject=My grocery list!&body=This is my grocery list: ' + productNames);
     }
-
 });
 
 overlay.addEventListener('click', function () {
     overlay.classList.remove('show-share');
     shareModal.classList.remove('show-share');
-})
-
-// Delete product - Added
-const deleteAddedItemBtn = document.querySelectorAll(".delete-added-item");
-deleteAddedItemBtn.forEach(function (element) {
-    element.addEventListener("click", function () {
-        element.parentElement.remove();
-    });
-});
-
-// Delete product - Checked
-const deleteCheckedItemBtn = document.querySelectorAll(".delete-completed-item");
-
-deleteCheckedItemBtn.forEach(function (element) {
-    element.addEventListener("click", function () {
-        element.parentElement.remove();
-    });
 });
 
 // Delete list
 const deleteListBtn = document.querySelector('.btn-delete');
-
+deleteListBtn.style.display = "inline";
 deleteListBtn.addEventListener("click", function () {
     allListItems.forEach(function (element) {
         element.remove();
