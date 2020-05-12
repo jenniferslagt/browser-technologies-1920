@@ -144,10 +144,10 @@ overlay.addEventListener('click', function () {
 ## Conclusion (learning goals and criteria)
 This is what I've learned during the past weeks:
 * I've learned a lot of about Browser Technologies. I applied this acknowlegde as an enhancement of my application. So my app is made for all kinds of users, browsers and devices (different contexts).
-  - I focussed on the core functionality of my app. This works in all types of contexts. 
-  - I tested my application in different contexts to enhance the user experience.
- 
-  - I made some fallbacks which are excecuted if a feature isn't supported.
+  - I focussed on the core functionality of my app. This works in all types of contexts. So the basic user experience is for everyone!
+  - I tested my application in different contexts to enhance the user experience (the 8 features / testing on different browsers).
+  - I made some fallbacks which are excecuted if a feature isn't supported (think about CSS fallbacks and and showing features when JavaScript is enabled).
+  - I focused on a current problem (people who can't go to the supermarket because they aren't stable enough) and made an application which solves this problem (make a grocery list and share it to the people who can do the groceries). 
  
 * I've learned what Progressive Enhancement is and how to apply this.
   - I started with making the core functionality of my app. This works for everyone.
