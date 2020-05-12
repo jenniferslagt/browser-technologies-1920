@@ -1,10 +1,10 @@
 const path = require('path')
 const fs = require('fs-extra');
-// const PORT = process.env.PORT || 3000;
-//dependencies required for the app
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
+require('dotenv').config()
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -53,6 +53,6 @@ app.get("/", function (req, res) {
 });
 
 //set app to listen on port 3000
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("server is running on port 3000");
 });
